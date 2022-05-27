@@ -1,0 +1,158 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{graphicx}
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Öncelikli Kuyruk (Priority Queue)\\
+
+\thanks{Kocaeli Üniversitesi.}
+}
+
+
+
+\maketitle
+\begin{figure}
+    \centering
+    \includegraphics[width=9cm]{yenii/resim_2021-12-20_163711.png}
+    \caption{}
+    \label{fig:my_label}
+\end{figure}
+
+
+
+
+\section{Özet}
+Bu rapor Programlama Laboratuvarı I Dersinin 3.Projesisini açıklamak ve sunumunu gerçeklestirmek amacıyla olusturulmuştur.Raporda projenin tanımı , yapım aşaması ,kullanılan araç ve yöntemler , kod parçacıkları vb. bulunmaktadır. Proje aşamasında yararlanılan kaynaklar raporun son bölümünde bulunmaktadır. 
+
+\section{Amaç}
+
+
+
+Bu projede amaç C dilinde öncelikli kuyruk yapısını kullanarak bir havalimanı projesi oluşturmaktır.
+
+\section{Giriş}
+Bu projede istenen uçakların havalimanına iniş saatleri düzenleyen program yazmaktır.Uçaklar talep ettikleri saate göre iniş için izin isterler.Öncelikli sıralarına göre kulenin yönlendirmesiyle inişlerini gerçekleştiren program yazılmıştır. 
+
+
+
+
+\subsection{Başlamadan önce}\label{AA}
+Projeye başlamadan ve kodlamaya girmeden önce veri yapıları ve öncelikli kuyruk hakkında çeşitli makalelerden detaylı araştırma yaptık.Bu projede nasıl kullanmamız gerektğini belirledikten sonra projeye başladık.
+
+
+
+
+
+
+\begin{IEEEkeywords}
+Örnek olarak Priority Queue basit bir örneği Figür 2’de verilmiştir.
+\end{IEEEkeywords}
+
+\subsection{Başlangıç}
+Uçaklar talep ettikleri saate göre havalimanına gelip iniş için izin isterler.Kulenin izin vermesi durumunda iniş gerçekleşir.Uçaklar pistte en fazla 1 saat kalabilirler sonrasında kalkış yapmak zorundalardır.
+
+\subsection{ilerleyiş}
+Talep edilen saatte birden fazla uçak iniş için izin istiyorsa önceliği olan uçak ilk olarak inişi gerçekleştiriyor.
+Diğer uçaklar bir sonraki saate erteleniyorlar. Eğer ki bir uçak 3 kereden fazla erteleniyorsa diğer piste iniş yapması için yönlendiriliyor.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12.3cm]{yenii/priqueu.png}
+    \caption{}
+    \label{fig:my_label}
+\end{figure}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=9.5cm]{yenii/69346b92-97c9-43b1-8045-323a281dd595.jpg}
+    \caption{Gecikme Fonksiyonu}
+    \label{fig:my_label}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=9.5cm]{yenii/6777c7c4-2c13-4664-9473-c30c7fa8ba58.jpg}
+    \caption{Output Fonksiyonu}
+    
+    
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=9.5cm]{yenii/7f216b9e-2ac9-49bf-a876-61b595724a97.jpg}
+    \caption{Ekle Fonksiyonu}
+    
+    
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=9.5cm]{yenii/d87f26df-ef39-4b55-bb68-d93a2cfb3993.jpg}
+    \caption{İnput Fonksiyonu}
+    
+    
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+\begin{itemize}
+
+
+
+\item Programlamayı C ile öğreniyorum
+\item https://www.youtube.com/watch?v=QEkPQqYZryk
+\item http://www.baskent.edu.tr/tkaracay/etudio/ders/prg/dataStru
+tures/Collections/ClassPriority
+\item https://medium.com/@tolgahan.cepel/doC49Frusal-veri-yapC4B1larC4B1-4-kuyruk-queue-dcbd07e8ba77
+\item https://cdn-acikogretim.istanbul.edu.tr/auzefcontent/2021G
+uz/veriyapilari/7/index.html
+\item https://www.youtube.com/watch?v=6WEwiF6pMY8
+
+
+\end{itemize}
+\newpage
+\vspace{12pt}
+\color{red}
+Projeyi Hazırlayanlar:\\
+Berke Kara-190202086\\
+Mehmet ALi Mehteroğlu-200202014
+
+\end{document}
